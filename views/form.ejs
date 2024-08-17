@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/stylesheets/form.css" />
+  </head>
+  <body>
+    <h1>Message Form</h1>
+    <form action="/submit" method="post" autocomplete="off">
+      <label for="userName">
+        Name
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          minlength="3"
+          maxlength="10"
+          required
+      /></label>
+      <label for="userMessage">
+        Message
+        <textarea
+          name="userMessage"
+          id="userMessage"
+          minlength="5"
+          required
+        ></textarea>
+      </label>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
